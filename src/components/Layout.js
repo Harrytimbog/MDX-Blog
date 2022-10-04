@@ -19,7 +19,7 @@ const Layout = ({ children }) => {
       <Navbar handleToggle={handleToggle} />
       <Sidebar isOpen={isOpen} handleToggle={handleToggle} />
       <main>{children}</main>
-      {/*<Footer />*/}
+      <Footer />
     </>
   )
 }
