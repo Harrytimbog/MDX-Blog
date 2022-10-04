@@ -4,7 +4,7 @@ import { FaBars } from 'react-icons/fa'
 import logo from '../assets/logo.svg'
 import Links from '../constants/links'
 import SocialLinks from '../constants/socialLinks'
-const Navbar = () => {
+const Navbar = ({ handleToggle }) => {
   return (
     <nav className="navbar">
       <div className="nav-center">
@@ -13,7 +13,7 @@ const Navbar = () => {
             <img src={logo} alt="mdx logo" />
           </Link>
           <button className="toggle-btn">
-            <FaBars />
+            <FaBars onClick={handleToggle} />
           </button>
         </div>
         <Links styleClass="nav-links" />
