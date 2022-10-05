@@ -27,7 +27,7 @@ export const query = graphql`
           category
           readTime
           slug
-          date(formatString: "MMMM, DD, YYYY")
+          date(formatString: "MMMM, Do, YYYY")
           image {
             childImageSharp {
               gatsbyImageData
