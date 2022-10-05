@@ -1,5 +1,6 @@
 import { Link } from 'gatsby'
 import { FiInfo } from 'react-icons/fi'
+import { Counter, LikeButton } from '../components/Complete'
 
 <section className="mdx-page">
 
@@ -33,5 +34,35 @@ const lastName = 'Doe'
 VHS leggings scenester narwhal, kale chips whatever pickled. Man braid Brooklyn ethical meh flexitarian woke crucifix. Godard 90's kale chips, readymade tofu fanny pack actually ennui messenger bag neutra butcher bitters poke. Readymade woke kickstarter butcher vibecession. Synth helvetica asymmetrical hella vape street art pinterest activated charcoal mukbang gatekeep blue bottle cliche mlkshk. Sartorial hot chicken hexagon PBR&B, street art yr cornhole edison bulb hoodie pinterest 8-bit. DIY big mood vexillologist, waistcoat ascot offal bicycle rights PBR&B four loko chambray blog.
 
 </div>
+
+<h2>React Components</h2>
+
+<Counter />
+
+```jsx
+import React from 'react'
+import styled from 'styled-components'
+import { AiOutlineLike } from 'react-icons/ai'
+const LikeButton = () => {
+  const [value, setValue] = React.useState(0)
+  return (
+    <Wrapper>
+      <div>
+        <button onClick={() => setValue(value + 1)}>
+          <AiOutlineLike />
+        </button>
+        <p>
+          Liked the post?
+          <br />
+          Click thumbs up few times
+        </p>
+      </div>
+      <span>+{value}</span>
+    </Wrapper>
+  )
+}
+```
+
+<LikeButton />
 
 </section>
