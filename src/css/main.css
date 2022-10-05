@@ -610,6 +610,7 @@ Testing Post and Components
 }
 
 .first-inline-img {
+  margin: 0.5em;
   width: 20rem;
   border-radius: 1rem;
 }
